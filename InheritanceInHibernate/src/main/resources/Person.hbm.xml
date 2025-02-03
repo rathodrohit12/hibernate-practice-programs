@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+   "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+   "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.rohit.bean.Person" table="user123"
+		discriminator-value="Person">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<discriminator column="identifier"></discriminator>
+		<property name="name"></property>
+
+		<subclass name="com.rohit.bean.Student"
+			discriminator-value="Student">
+			<property name="course"></property>
+			<property name="fee"></property>
+		</subclass>
+
+		<subclass name="com.rohit.bean.Employee"
+			discriminator-value="Employee">
+			<property name="job"></property>
+			<property name="sal"></property>
+		</subclass>
+	</class>
+</hibernate-mapping>

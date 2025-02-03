@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+   "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+   "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.rohit.bean.Person" table="person3">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="name"></property>
+	</class>
+
+	<class name="com.rohit.bean.Student" table="student3">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="name"></property>
+		<property name="fee"></property>
+		<property name="course"></property>
+	</class>
+
+	<class name="com.rohit.bean.Employee" table="employee3">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="name"></property>
+		<property name="job"></property>
+		<property name="sal"></property>
+	</class>
+
+</hibernate-mapping>

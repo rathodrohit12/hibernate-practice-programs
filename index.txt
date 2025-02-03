@@ -1,0 +1,16 @@
+jspProject
+
+WithoutORM
+FirstHibernateProject
+FirstHibernateProject2
+
+MavenWebProjectWithORM
+ORMWithAnnotation
+
+InheritanceInHibernate
+InheritanceInHibernate2
+InheritanceInHibernateJoinTable
+InheritanceInHibernateSeparateTable
+
+
+
